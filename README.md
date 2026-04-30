@@ -23,7 +23,7 @@ Designed to practice SOC operations, log analysis, network reconnaissance, and w
 ---
 
 ## Phase 2 — SOC & Log Analysis ✅
-- [SSH Brute Force Attack: Detection & Analysis](phase2-ssh-bruteforce-analysis.md)
+- [SSH Brute Force Attack: Detection & Analysis](Phase 2 - SSH brute force detection and analysis)
   
 ---
 ## Phase 3 — Network & Web Application Testing (Upcoming)

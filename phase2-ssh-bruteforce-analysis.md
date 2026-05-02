@@ -86,6 +86,7 @@ from single source
 ---
 
 ## Outcome
+
 Attack failed. Ubuntu's default SSH configuration disconnected the 
 attacker after maximum authentication attempts were exceeded. 
 However, without Fail2Ban or IP blocking, the attacker was free 
@@ -107,3 +108,33 @@ sudo journalctl -u ssh | grep "Failed password" | wc -l
 sudo journalctl -u ssh | grep "Failed password" | head -5
 sudo journalctl -u ssh | grep "Failed password" | tail -5
 ```
+
+## Defensive Implementation — Fail2Ban
+
+Installed and configured Fail2Ban to automatically ban IPs exceeding 
+the failed login threshold.
+
+### Configuration (/etc/fail2ban/jail.local)
+[DEFAULT]
+backend = systemd
+[sshd]
+enabled = true
+port = ssh
+maxretry = 5
+bantime = 600
+findtime = 600
+
+### Result
+Re-ran Hydra brute force simulation. Fail2Ban detected the attack 
+and automatically banned 192.168.64.2 (Kali) after 5 failed attempts.
+
+Verified with:
+```bash
+sudo fail2ban-client status sshd
+```
+Output confirmed: 1 IP banned.
+
+### What This Demonstrates
+- Automated threat response without manual intervention
+- 600 second ban window stops the attack immediately
+- In production, bantime would typically be 24 hours or permanent

@@ -24,6 +24,7 @@ Designed to practice SOC operations, log analysis, network reconnaissance, and w
 
 ## Phase 2 — SOC & Log Analysis ✅
 - [SSH Brute Force Attack: Detection & Analysis](phase2-ssh-bruteforce-analysis.md)
+- Fail2Ban configured and verified — attacker IP auto-banned
   
 ---
 ## Phase 3 — Network & Web Application Testing (Upcoming)

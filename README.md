@@ -27,4 +27,5 @@ Designed to practice SOC operations, log analysis, network reconnaissance, and w
 - Fail2Ban configured and verified — attacker IP auto-banned
   
 ---
-## Phase 3 — Network & Web Application Testing (Upcoming)
+## Phase 3 — Network Traffic Analysis ✅
+- [Wireshark Analysis of SSH Brute Force](phase3-network-traffic-analysis.md)

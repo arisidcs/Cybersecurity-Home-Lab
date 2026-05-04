@@ -29,3 +29,6 @@ Designed to practice SOC operations, log analysis, network reconnaissance, and w
 ---
 ## Phase 3 — Network Traffic Analysis ✅
 - [Wireshark Analysis of SSH Brute Force](phase3-network-traffic-analysis.md)
+
+## Phase 4 — Web Application Attack Simulation ✅
+- [SQL Injection Attack on DVWA](phase4-web-application-attacks.md)

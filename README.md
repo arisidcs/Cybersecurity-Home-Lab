@@ -32,3 +32,6 @@ Designed to practice SOC operations, log analysis, network reconnaissance, and w
 
 ## Phase 4 — Web Application Attack Simulation ✅
 - [SQL Injection Attack on DVWA](phase4-web-application-attacks.md)
+
+## Phase 5 — Network Reconnaissance ✅
+- [Nmap Scanning & Analysis](phase5-nmap-reconnaissance.md)
